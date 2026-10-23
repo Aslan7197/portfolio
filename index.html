@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aslan Abdinabiev – LLM Research Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Sticky Navigation -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-name">Aslan Abdinabiev</span>
+      <ul>
+        <li><a href="#hero" data-i18n="nav_home">홈</a></li>
+        <li><a href="#skills" data-i18n="nav_skills">기술</a></li>
+        <li><a href="#education" data-i18n="nav_education">학력</a></li>
+        <li><a href="#research-experience" data-i18n="nav_experience">경력</a></li>
+        <li><a href="#awards" data-i18n="nav_awards">수상</a></li>
+        <li><a href="#projects" data-i18n="nav_projects">프로젝트</a></li>
+        <li><a href="#publications" data-i18n="nav_publications">출판</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">연락처</a></li>
+      </ul>
+      <div class="lang-switch">
+        <button type="button" class="lang-btn active" data-lang="ko">KO</button>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-badge" data-i18n="hero_badge">전문연구요원 지원 가능 / Research Engineer Intern</p>
+        <h1>Aslan Abdinabiev</h1>
+        <p class="hero-role" data-i18n="hero_role">LLM 시스템 엔지니어 · AI 에이전트 개발 · 코드 인텔리전스</p>
+        <p class="hero-desc" data-i18n="hero_desc">
+          대규모 언어 모델을 활용해 소프트웨어 버그를 자동으로 탐지하고 수정하는 도구를 개발합니다.
+          멀티 에이전트 수리 시스템, 컨텍스트 기반 패치 생성 및 Defects4J/SWE-Bench 결함 위치 추적에 주력합니다.
+        </p>
+        <div class="hero-buttons">
+          <a href="files/Aslan_CV(2026.10-revised).pdf" download class="btn btn-primary" data-i18n="button_download">이력서 다운로드</a>
+          <a href="#projects" class="btn btn-outline" data-i18n="button_projects">프로젝트</a>
+          <a href="https://scholar.google.com/citations?hl=en&user=W-YakaQAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" class="btn btn-outline" data-i18n="button_scholar">Google Scholar</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="photo.jpg" alt="Aslan Abdinabiev" />
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- Looking For -->
+    <section id="looking-for">
+      <h2 data-i18n="looking_for_heading">지원 분야</h2>
+      <p data-i18n="looking_for_paragraph_1">
+        현재 서울시립대학교 소프트웨어공학 박사과정 중이며, 2027년 졸업 예정입니다. 전문연구요원,
+        연구 엔지니어 인턴, 또는 AI/LLM 엔지니어링 파트타임 직무를 찾고 있습니다.
+      </p>
+      <p data-i18n="looking_for_paragraph_2">
+        관심 분야: LLM 응용 엔지니어링, AI 에이전트 시스템, 코드 인텔리전스,
+        및 자동화된 소프트웨어 분석.
+      </p>
+      <p data-i18n="looking_for_paragraph_3">
+        고용 형태: 파트타임 / 전문연구요원 (즉시 가능)
+      </p>
+    </section>
+
+    <!-- ── Top row: Education · Skills · Languages ── -->
+    <div class="top-row">
+
+      <section id="education">
+        <h2 data-i18n="education_heading">학력</h2>
+        <div class="edu-timeline">
+          <div class="edu-item">
+            <div class="edu-year">2024 – Now</div>
+            <div class="edu-body">
+              <p class="edu-degree" data-i18n="edu_degree_phd">소프트웨어공학 박사 과정</p>
+              <p class="edu-school"><a href="https://www.uos.ac.kr/main.do" target="_blank" data-i18n="edu_school_uos">서울시립대학교</a></p>
+              <p class="edu-note" data-i18n="edu_note_phd">LLM을 이용한 자동 프로그램 수정</p>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-year">2022 – 2024</div>
+            <div class="edu-body">
+              <p class="edu-degree" data-i18n="edu_degree_msc">소프트웨어공학 석사</p>
+              <p class="edu-school"><a href="https://www.uos.ac.kr/main.do" target="_blank" data-i18n="edu_school_uos">서울시립대학교</a></p>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-year">2016 – 2020</div>
+            <div class="edu-body">
+              <p class="edu-degree" data-i18n="edu_degree_bs">정보기술 학사</p>
+              <p class="edu-school"><a href="https://nuu.uz/en/" target="_blank" data-i18n="edu_school_nuu">우즈베키스탄 국립대학교</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2 data-i18n="skills_heading">기술</h2>
+        <div class="skill-group">
+          <span class="skill-label" data-i18n="skill_label_languages">언어</span>
+          <p>Python · Java · SQL · C# · Bash · HTML/CSS</p>
+        </div>
+        <div class="skill-group">
+          <span class="skill-label" data-i18n="skill_label_ai_ml">AI / ML</span>
+          <p>GPT-4o · CodeLlama-34B · Qwen 2.5 32B · Gemma 4 12B · Devstral Small 2 24B · Qwen3.8-27B · CodeBERT · Qwen3-Embedding-0.6B</p>
+        </div>
+        <div class="skill-group">
+          <span class="skill-label" data-i18n="skill_label_techniques">기법</span>
+          <p>Fine-tuning · RAG · Prompt Engineering · Embedding Retrieval · Multi-Agent Systems · AST Analysis</p>
+        </div>
+        <div class="skill-group">
+          <span class="skill-label" data-i18n="skill_label_tools">도구</span>
+          <p>Git · Docker · Linux · OpenAI API · FAISS · Hugging Face · JavaParser · Defects4J · SWE-Bench · LangChain · FastAPI</p>
+        </div>
+      </section>
+
+      <section id="languages">
+        <h2 data-i18n="languages_heading">언어 능력</h2>
+        <div class="language">
+          <div class="lang-row"><span>English</span><span class="lang-level">B2–C1</span></div>
+          <div class="progress-bar"><div class="progress" style="width:90%"></div></div>
+        </div>
+        <div class="language">
+          <div class="lang-row"><span>Russian</span><span class="lang-level">B1</span></div>
+          <div class="progress-bar"><div class="progress" style="width:60%"></div></div>
+        </div>
+        <div class="language">
+          <div class="lang-row"><span>Korean</span><span class="lang-level">A2</span></div>
+          <div class="progress-bar"><div class="progress" style="width:25%"></div></div>
+        </div>
+        <div class="language">
+          <div class="lang-row"><span>Uzbek</span><span class="lang-level">Native</span></div>
+          <div class="progress-bar"><div class="progress" style="width:100%"></div></div>
+        </div>
+      </section>
+
+    </div><!-- /top-row -->
+
+    <!-- ── Full-width sections ── -->
+
+        <!-- Research Experience -->
+        <section id="research-experience">
+          <h2 data-i18n="research_heading">연구 경력</h2>
+          <div class="exp-header">
+            <div>
+              <strong data-i18n="research_title">대학원 학생연구원</strong>
+              <span class="exp-org" data-i18n="research_org">— 서울시립대학교 소프트웨어공학 연구실</span>
+            </div>
+            <span class="exp-date">2022 – 현재</span>
+          </div>
+          <ul class="exp-bullets">
+            <li data-i18n="research_bullet_1">GPT-4o 및 로컬 오픈웨이트 모델에 검색 증강 생성(RAG)과 정적 코드 분석을 결합한 소프트웨어 디버깅·자동 수정 도구를 개발했습니다.</li>
+            <li data-i18n="research_bullet_2">Defects4J와 SWE-bench Lite에서 Java 버그 365개, Python 버그 87개를 정확히 수정했습니다.</li>
+            <li data-i18n="research_bullet_3">실제 GitHub 이슈 300개에서 파일 식별 정확도 74.6%, 코드 요소 식별 정확도 52.3%를 달성했습니다.</li>
+            <li data-i18n="research_bullet_4">IEEE Access, JIPS, KIISE 저널 및 국내 소프트웨어공학·컴퓨터 분야 학술대회에 제1저자 및 공저자로 논문을 발표했습니다.</li>
+            <li data-i18n="research_bullet_5">수정 워크플로·모델·계산 예산을 선택하는 예측 기반 라우팅을 연구했습니다. Gemma 4 12B, Devstral Small 2 24B, Qwen3.8-27B로 15개 저장소의 버그 733개, 구성 27종을 평가했습니다.</li>
+          </ul>
+        </section>
+
+        <!-- Awards -->
+        <section id="awards">
+          <h2 data-i18n="awards_heading">수상</h2>
+          <div class="award-list">
+
+            <div class="award-item">
+              <div class="award-body">
+                <p class="award-name" data-i18n="award4_name">최우수논문상</p>
+                <p class="award-venue" data-i18n="award4_venue">KCC 2026 — 한국컴퓨터종합학술대회 (소프트웨어공학)</p>
+                <p class="award-paper" data-i18n="pub17_title">이슈와 실패 원인 간의 정합성 기반 재현 테스트 생성</p>
+                <span class="award-date" data-i18n="award4_date">2026년 6월</span>
+                <a href="https://lifenlearning.chosun.com/pan/site/data/html_dir/2026/07/02/2026070202177.html" target="_blank" class="pub-link" data-i18n="award4_link">수상 소식 →</a>
+              </div>
+            </div>
+
+
+            <div class="award-item">
+              <a href="awards/KSCE2025.png" target="_blank" class="award-thumb-link">
+                <img src="awards/KSCE2025.png" alt="Best Short Paper Award KCSE 2025" class="award-thumb" />
+              </a>
+              <div class="award-body">
+                <p class="award-name" data-i18n="award1_name">우수단편논문상 <span class="award-kr">· Best Short Paper Award</span></p>
+                <p class="award-venue" data-i18n="award1_venue">KCSE 2025 — 한국 소프트웨어공학 학술대회</p>
+                <p class="award-paper" data-i18n="award1_paper">LLM 기반 다중 함수 프로그램 정정 (Patch Feedback &amp; Combination)</p>
+                <span class="award-date" data-i18n="award1_date">2025년 1월</span>
+              </div>
+            </div>
+
+            <div class="award-item">
+              <a href="awards/KSC2023.png" target="_blank" class="award-thumb-link">
+                <img src="awards/KSC2023.png" alt="Best Presentation Paper Award KCC 2023" class="award-thumb" />
+              </a>
+              <div class="award-body">
+                <p class="award-name" data-i18n="award2_name">우수발표논문상 <span class="award-kr">· Best Presentation Paper Award</span></p>
+                <p class="award-venue" data-i18n="award2_venue">KCC 2023 — 한국컴퓨터종합학술대회</p>
+                <p class="award-paper" data-i18n="award2_paper">자동 프로그램 수정에서 멀티 청크 버그를 위한 패치 최적화 개선</p>
+                <span class="award-date" data-i18n="award2_date">2023년 7월</span>
+              </div>
+            </div>
+
+            <div class="award-item">
+              <a href="awards/KCC2022.png" target="_blank" class="award-thumb-link">
+                <img src="awards/KCC2022.png" alt="Best Presentation Paper Award KSC 2022" class="award-thumb" />
+              </a>
+              <div class="award-body">
+                <p class="award-name" data-i18n="award3_name">우수발표논문상 <span class="award-kr">· Best Presentation Paper Award</span></p>
+                <p class="award-venue" data-i18n="award3_venue">KSC 2022 — 한국소프트웨어종합학술대회</p>
+                <p class="award-paper" data-i18n="award3_paper">멀티 청크 프로그램 수정을 위한 버기 블록 기반 패치 최적화</p>
+                <span class="award-date" data-i18n="award3_date">2023년 2월</span>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+          <h2 data-i18n="projects_heading">프로젝트</h2>
+
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="proj-top">
+              <div class="proj-title-block">
+                <h3><span class="proj-num">01</span> Dynamic Context 기반 에이전트 APR</h3>
+                <div class="proj-meta">
+                  <span class="proj-year">2024 – 2026</span>
+                  <span class="proj-chip">Published in IEEE Access 2026</span>
+                </div>
+              </div>
+              <div class="proj-actions">
+                <a href="https://github.com/soft7197/dcsa4apr" target="_blank">GitHub</a>
+                <a href="https://doi.org/10.1109/ACCESS.2026.3691783" target="_blank" class="pub-link">Paper (DOI) →</a>
+              </div>
+            </div>
+
+            <div class="proj-stack">
+              <span>Python</span><span>Java</span><span>GPT-4o</span><span>CodeBERT</span><span>FAISS</span><span>Docker</span>
+            </div>
+
+            <div class="proj-metrics">
+              <div class="proj-metric">
+                <strong>365</strong>
+                <span data-i18n="proj1_metric_1">Defects4J 버그 수정</span>
+              </div>
+              <div class="proj-metric">
+                <strong>87</strong>
+                <span data-i18n="proj1_metric_2">SWE-Bench Lite 버그 수정</span>
+              </div>
+              <div class="proj-metric">
+                <strong>+7.5%</strong>
+                <span data-i18n="proj1_metric_3">SRepair 대비</span>
+              </div>
+              <div class="proj-metric">
+                <strong>29.9%</strong>
+                <span data-i18n="proj1_metric_4">SWE-Bench 수정 비율</span>
+              </div>
+            </div>
+
+            <dl class="proj-specs">
+              <dt>Architecture</dt>
+              <dd data-i18n="proj1_architecture">3-에이전트 LLM 루프 — 컨텍스트 업데이트 → 생성기 → 과적합 탐지기; 모두 GPT-4o</dd>
+
+              <dt>Context tools</dt>
+              <dd data-i18n="proj1_context_tools">Coverage Runner · CodeBERT+FAISS 의미 검색 · 코드 추출기 · 호출 그래프 빌더 · 필드 의존성 분석기 · API 사용 탐지기</dd>
+
+              <dt>Repair scope</dt>
+              <dd data-i18n="proj1_repair_scope">단일 메서드 및 다중 메서드(최대 10개)를 테스트 커버리지 중첩 기반 연결 요소로 그룹화하여 처리</dd>
+
+              <dt>Java results</dt>
+              <dd data-i18n="proj1_java_results">Defects4J v1.2 187개 + v2.0 178개 버그; SRepair, ChatRepair, ThinkRepair보다 우수</dd>
+
+              <dt>Python results</dt>
+              <dd data-i18n="proj1_python_results">SWE-Bench Lite 10개 저장소에서 87개 버그 수정: astropy, django, sympy, scikit-learn, matplotlib 등</dd>
+            </dl>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="proj-top">
+              <div class="proj-title-block">
+                <h3><span class="proj-num">02</span> MCRepair++: 다중 청크 프로그램 수정</h3>
+                <div class="proj-meta">
+                  <span class="proj-year">2022 – 2024</span>
+                  <span class="proj-chip">Published in IEEE Access 2025</span>
+                </div>
+              </div>
+              <div class="proj-actions">
+                <a href="https://github.com/kimjisung78/MCRepair-Plus-Plus" target="_blank">GitHub</a>
+                <a href="https://doi.org/10.1109/ACCESS.2025.3541336" target="_blank">DOI</a>
+              </div>
+            </div>
+
+            <div class="proj-stack">
+              <span>Python</span><span>Java</span><span>CodeBERT</span><span>PyTorch</span><span>Defects4J</span>
+            </div>
+
+            <div class="proj-metrics">
+              <div class="proj-metric">
+                <strong>79 / 89</strong>
+                <span data-i18n="proj2_metric_1">정확히 수정된 버그</span>
+              </div>
+              <div class="proj-metric">
+                <strong>331</strong>
+                <span data-i18n="proj2_metric_2">정확한 패치</span>
+              </div>
+              <div class="proj-metric">
+                <strong>82,750</strong>
+                <span data-i18n="proj2_metric_3">컴파일 가능한 패치</span>
+              </div>
+              <div class="proj-metric">
+                <strong>21–342%</strong>
+                <span data-i18n="proj2_metric_4">기존 자동 수정 도구 3종 대비</span>
+              </div>
+            </div>
+
+            <dl class="proj-specs">
+              <dt>Key idea</dt>
+              <dd data-i18n="proj2_key_idea">의존 관계 분석으로 상호 의존 버그 청크를 하나의 "버기 블록"으로 묶고, 통합 표현으로 CodeBERT를 파인튜닝합니다.</dd>
+
+              <dt>MRL</dt>
+              <dd data-i18n="proj2_mrl">최소화된 수정 위치 — FAULT_OF_OMISSION 태그가 없는 한 공백/주석/널 라인을 제외하여 패치 검색 노이즈를 줄입니다.</dd>
+
+              <dt>Patch optimization</dt>
+              <dd data-i18n="proj2_patch_optimization">(1) 필터: 중복, 문법 오류, 관련 없는 패치 제거 &nbsp;(2) 순위: 합집합 분모로 적은 편집 동작에 보상 &nbsp;(3) 결합: 위치별 비례 top-k</dd>
+
+              <dt>Bug taxonomy</dt>
+              <dd data-i18n="proj2_bug_taxonomy">T1 단일 청크 · T2 단일 청크 다중 위치 · T3 다중 청크 — 시스템은 가장 어려운 T3에 집중합니다.</dd>
+
+              <dt>Projects</dt>
+              <dd data-i18n="proj2_projects">Chart (6) · Closure (21) · Lang (12) · Math (30) · Mockito (6) · Time (4)</dd>
+            </dl>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="proj-top">
+              <div class="proj-title-block">
+                <h3><span class="proj-num">03</span> 분류 기반 결함 위치 추적</h3>
+                <div class="proj-meta">
+                  <span class="proj-year">2025 – 2026</span>
+                  <span class="proj-chip">Presented in KCSE 2026</span>
+                </div>
+              </div>
+              <div class="proj-actions">
+                <a href="https://github.com/soft7197/cbfl" target="_blank">GitHub</a>
+                <a href="https://kcse.sigsoft.or.kr/2026/files/KCSE-2026-proceedings.pdf" target="_blank">Paper (pp. 183–186)</a>
+              </div>
+            </div>
+
+            <div class="proj-stack">
+              <span>Python</span><span>GPT-4o</span><span>AST Parsing</span><span>SWE-Bench Lite</span>
+            </div>
+
+            <div class="proj-metrics">
+              <div class="proj-metric">
+                <strong>74.6%</strong>
+                <span data-i18n="proj3_metric_1">파일 경로 정확도</span>
+              </div>
+              <div class="proj-metric">
+                <strong>52.3%</strong>
+                <span data-i18n="proj3_metric_2">심볼 수준 정확도</span>
+              </div>
+              <div class="proj-metric">
+                <strong>$0.05</strong>
+                <span data-i18n="proj3_metric_3">이슈당 비용</span>
+              </div>
+              <div class="proj-metric">
+                <strong>37.5%</strong>
+                <span data-i18n="proj3_metric_4">Agentless 대비 비용 절감</span>
+              </div>
+            </div>
+
+            <dl class="proj-specs">
+              <dt>Classification</dt>
+              <dd data-i18n="proj3_classification">FULL_LOCATION — 직접 AST 인덱스 조회, LLM 없음 (~$0.01) · PARTIAL — 심볼 요약에 대해 1회 LLM 추론 호출 (~$0.04) · HINT — 최대 5회 반복 에이전트 탐색 (~$0.05)</dd>
+
+              <dt>Repo indexing</dt>
+              <dd data-i18n="proj3_repo_indexing">Python ast 모듈로 파일별 전체 심볼 인덱스 구축(함수, 클래스 요소, 모듈 심볼); basename/suffix/module path 3중 파일 해결기 — 임베딩 불필요</dd>
+
+              <dt>PARTIAL handler</dt>
+              <dd data-i18n="proj3_partial_handler">심볼 요약(80줄 발췌 + 추론 호출 그래프) 작성 → GPT-4o가 EDIT_LOCATION / SYMPTOM_ONLY / NOT_RELATED로 분류</dd>
+
+              <dt>HINT handler</dt>
+              <dd data-i18n="proj3_hint_handler">에이전트가 메모리 AST 인덱스를 기반으로 search_class / search_method / search_code를 반복 호출; 발견 순서에 따라 점수가 감소(빠를수록 가중치 높음)</dd>
+
+              <dt>Budget</dt>
+              <dd data-i18n="proj3_budget">이슈당 $0.50, 3,000초 하드 제한; 한도 근접 시 선택적 LLM 단계를 비활성화하여 안정적으로 감쇠</dd>
+            </dl>
+
+            <table class="cmp-table">
+              <thead>
+                <tr><th>System</th><th>File Acc.</th><th>Symbol Acc.</th><th>Cost/Issue</th></tr>
+              </thead>
+              <tbody>
+                <tr class="ours"><td><strong>CBFL (ours)</strong></td><td><strong>74.6%</strong></td><td><strong>52.3%</strong></td><td><strong>$0.05</strong></td></tr>
+                <tr><td>Agentless</td><td>69.7%</td><td>50.3%</td><td>$0.08</td></tr>
+                <tr><td>AutoCodeRover</td><td>69.0%</td><td>49.7%</td><td>—</td></tr>
+                <tr><td>SWE-agent</td><td>58.0%</td><td>42.3%</td><td>—</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Publications -->
+        <section id="publications">
+          <h2 data-i18n="publications_heading">출판</h2>
+          <p class="pub-note">
+            <span data-i18n="publications_note">주저자 및 공저자로 발표한 연구. 2026년 10월 업데이트.</span>
+            <a href="https://selab.uos.ac.kr/lab-achievements" target="_blank" data-i18n="publications_lab_link">연구실 전체 목록 →</a>
+          </p>
+
+          <div class="pub-list">
+            <div class="pub-item">
+              <div class="pub-left">
+                <span class="pub-badge ij">IJ</span>
+                <span class="pub-year">2026</span>
+              </div>
+              <div class="pub-right">
+                <p class="pub-title" data-i18n="pub1_title">에이전트 기반 자동 프로그램 수정을 위한 동적 컨텍스트와 정적 분석 활용</p>
+                <p class="pub-authors">Aslan Safarovich Abdinabiev, Eunseo Jung, Byungjeong Lee</p>
+                <p class="pub-venue" data-i18n="pub1_venue">IEEE Access, Vol. 14, pp. 71821–71835</p>
+                <div class="pub-chips">
+                  <span data-i18n="pub1_chip_1">제1저자</span><span data-i18n="pub1_chip_2">Defects4J 365개 + SWE-Bench 87개 버그</span><span data-i18n="pub1_chip_3">SRepair 대비 +7.5%</span>
+                </div>
+                <a href="https://github.com/soft7197/dcsa4apr" target="_blank" class="pub-link">GitHub →</a>
+                <a href="https://doi.org/10.1109/ACCESS.2026.3691783" target="_blank" class="pub-link">Paper (DOI) →</a>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <div class="pub-left">
+                <span class="pub-badge dc">DC</span>
+                <span class="pub-year">2026</span>
+              </div>
+              <div class="pub-right">
+                <p class="pub-title" data-i18n="pub17_title">이슈와 실패 원인 간의 정합성 기반 재현 테스트 생성</p>
+                <p class="pub-authors">Suji Hong, Taewoo Kang, Aslan Safarovich Abdinabiev, Byungjeong Lee</p>
+                <p class="pub-venue" data-i18n="pub17_venue">한국컴퓨터종합학술대회 (KCC 2026), pp. 672–674</p>
+                <div class="pub-chips">
+                  <span data-i18n="pub17_chip_1">공저자</span>
+                  <span data-i18n="award4_name">최우수논문상</span>
+                </div>
+                <a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12929419" target="_blank" class="pub-link">Paper →</a>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <div class="pub-left">
+                <span class="pub-badge dc">DC</span>
+                <span class="pub-year">2026</span>
+              </div>
+              <div class="pub-right">
+                <p class="pub-title" data-i18n="pub2_title">이슈 설명과 심볼 수준 타깃팅을 활용한 분류 기반 결함 위치 추적</p>
+                <p class="pub-title-kr">이슈 설명과 심볼 수준의 목표를 활용한 분류 기반 결함 위치 식별</p>
+                <p class="pub-authors">Aslan Safarovich Abdinabiev, Suji Hong, Byungjeong Lee</p>
+                <p class="pub-venue" data-i18n="pub2_venue">KCSE 2026 — 한국소프트웨어공학학술대회, pp. 183–186</p>
+                <div class="pub-chips">
+                  <span data-i18n="pub2_chip_1">제1저자</span><span data-i18n="pub2_chip_2">파일 경로 정확도 74.6%</span><span data-i18n="pub2_chip_3">SWE-Bench Lite</span>
+                </div>
+                <a href="https://kcse.sigsoft.or.kr/2026/files/KCSE-2026-proceedings.pdf" target="_blank" class="pub-link">Paper (pp. 183–186) →</a>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <div class="pub-left">
+                <span class="pub-badge dj">DJ</span>
+                <span class="pub-year">2026</span>
+              </div>
+              <div class="pub-right">
+                <p class="pub-title" data-i18n="pub8_title">RAG와 테스트-메소드 매핑을 통한 LLM 기반 프로그램 정정 향상</p>
+                <p class="pub-authors">Aslan Safarovich Abdinabiev, Eunseo Jung, Byungjeong Lee</p>
+                <p class="pub-venue" data-i18n="pub8_venue">정보처리학회 논문지, Vol. 15, No. 1, pp. 61–69</p>
+                <div class="pub-chips">
+                  <span data-i18n="pub8_chip_1">제1저자</span>
+                </div>
+                <a href="https://doi.org/10.3745/TKIPS.2026.15.1.61" target="_blank" class="pub-link">Paper (DOI) →</a>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <div class="pub-left">
+                <span class="pub-badge dc">DC</span>
+                <span class="pub-year">2025</span>
+              </div>
+              <div class="pub-right">
+                <p class="pub-title" data-i18n="pub9_title">LLM과 복합 목표를 사용한 효과적인 테스트 생성</p>
+                <p class="pub-authors">Suji Hong, Aslan Safarovich Abdinabiev, Byungjeong Lee</p>
+                <p class="pub-venue" data-i18n="pub9_venue">한국소프트웨어종합학술대회 (KSC 2025), pp. 417–419</p>
+                <div class="pub-chips">
+                  <span data-i18n="pub9_chip_1">공저자</span>
+                </div>
+                <a href="https://scholar.google.com/citations?user=W-YakaQAAAAJ&amp;view_op=view_citation&amp;citation_for_view=W-YakaQAAAAJ:NJ774b8OgUMC" target="_blank" class="pub-link">Google Scholar →</a>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <div class="pub-left">
+                <span class="pub-badge dj">DJ</span>
+                <span class="pub-year">2025</span>
+              </div>
+              <div class="pub-right">
+                <p class="pub-title" data-i18n="pub10_title">패치 경량화와 문맥 정보를 활용한 프로그램 자동 정정 개선</p>
+                <p class="pub-authors">Eunseo Jung, Aslan Safarovich Abdinabiev, Byungjeong Lee</p>
+                <p class="pub-venue" data-i18n="pub10_venue">정보과학회논문지, Vol. 52, No. 8, pp. 670–676</p>
+                <div class="pub-chips">
+                  <span data-i18n="pub10_chip_1">공저자</span>
+                </div>
+                <a href="https://doi.org/10.5626/JOK.2025.52.8.670" target="_blank" class="pub-link">Paper (DOI) →</a>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <div class="pub-left">
+                <span class="pub-badge dc">DC</span>
+                <span class="pub-year">2025</span>
+              </div>
+              <div class="pub-right">
+                <p class="pub-title" data-i18n="pub11_title">LLM의 입력 길이 제한 조건 하에서 패치 경량화와 문맥 활용 기법</p>
+                <p class="pub-authors">Eunseo Jung, Aslan Safarovich Abdinabiev, Suji Hong, Byungjeong Lee</p>
+                <p class="pub-venue" data-i18n="pub11_venue">한국컴퓨터종합학술대회 (KCC 2025), pp. 409–411</p>
+                <div class="pub-chips">
+                  <span data-i18n="pub11_chip_1">공저자</span>
+                </div>
+                <a href="https://scholar.google.com/citations?user=W-YakaQAAAAJ&amp;view_op=view_citation&amp;citation_for_view=W-YakaQAAAAJ:Fu2w8maKXqMC" target="_blank" class="pub-link">Google Scholar →</a>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <div class="pub-left">
+                <span class="pub-badge ij">IJ</span>
+                <span class="pub-year">2025</span>
+              </div>
+              <div class="pub-right">
+                <p class="pub-title" data-i18n="pub3_title">복잡한 프로그램 수정을 위한 버기 블록 기반 패치 최적화 개선</p>
+                <p class="pub-authors">Jisung Kim, Aslan Safarovich Abdinabiev, Byungjeong Lee</p>
+                <p class="pub-venue" data-i18n="pub3_venue">IEEE Access, Vol. 13, pp. 30420–30443</p>
+                <div class="pub-chips">
+                  <span data-i18n="pub3_chip_1">공저자</span><span data-i18n="pub3_chip_2">79/89 버그 정확히 수정</span><span data-i18n="pub3_chip_3">기준 대비 21–342%</span>
+                </div>
+                <a href="https://doi.org/10.1109/ACCESS.2025.3541336" target="_blank" class="pub-link">Paper (DOI) →</a>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <div class="pub-left">
+                <span class="pub-badge dc">DC</span>
+                <span class="pub-year">2025</span>
+              </div>
+              <div class="pub-right">
+                <p class="pub-title" data-i18n="pub12_title">패치 피드백과 조합을 활용한 LLM 기반 다중 함수 프로그램 정정</p>
+                <p class="pub-authors">Aslan Safarovich Abdinabiev, Eunseo Jung, Byungjeong Lee</p>
+                <p class="pub-venue" data-i18n="pub12_venue">한국소프트웨어공학학술대회 (KCSE 2025), Vol. 27, No. 1, pp. 15–18</p>
+                <div class="pub-chips">
+                  <span data-i18n="pub12_chip_1">제1저자</span>
+                </div>
+                <a href="https://scholar.google.com/citations?user=W-YakaQAAAAJ&amp;view_op=view_citation&amp;citation_for_view=W-YakaQAAAAJ:_Ybze24A_UAC" target="_blank" class="pub-link">Google Scholar →</a>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <div class="pub-left">
+                <span class="pub-badge ij">IJ</span>
+                <span class="pub-year">2024</span>
+              </div>
+              <div class="pub-right">
+                <p class="pub-title" data-i18n="pub4_title">자동 프로그램 수정에서 다중 청크 버그를 위한 개선된 패치 최적화 기법</p>
+                <p class="pub-authors">Aslan Safarovich Abdinabiev, Jisung Kim, Byungjeong Lee</p>
+                <p class="pub-venue" data-i18n="pub4_venue">Journal of Information Processing Systems (JIPS), Vol. 20, No. 5, pp. 627–639</p>
+                <div class="pub-chips">
+                  <span data-i18n="pub4_chip_1">제1저자</span><span data-i18n="pub4_chip_2">다중 청크 APR</span>
+                </div>
+                <a href="https://scholar.google.com/citations?user=W-YakaQAAAAJ&amp;view_op=view_citation&amp;citation_for_view=W-YakaQAAAAJ:0EnyYjriUFMC" target="_blank" class="pub-link">Google Scholar →</a>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <div class="pub-left">
+                <span class="pub-badge dj">DJ</span>
+                <span class="pub-year">2024</span>
+              </div>
+              <div class="pub-right">
+                <p class="pub-title" data-i18n="pub5_title">다중 청크 프로그램 수정에서 패치 최적화 품질 향상</p>
+                <p class="pub-authors">Aslan Safarovich Abdinabiev, Jisung Kim, Byungjeong Lee</p>
+                <p class="pub-venue" data-i18n="pub5_venue">KIISE Transactions on Computing Practices, Vol. 30, No. 8, pp. 354–361</p>
+                <div class="pub-chips">
+                  <span data-i18n="pub5_chip_1">제1저자</span>
+                </div>
+                <a href="https://scholar.google.com/citations?user=W-YakaQAAAAJ&amp;view_op=view_citation&amp;citation_for_view=W-YakaQAAAAJ:RHpTSmoSYBkC" target="_blank" class="pub-link">Google Scholar →</a>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <div class="pub-left">
+                <span class="pub-badge dc">DC</span>
+                <span class="pub-year">2024</span>
+              </div>
+              <div class="pub-right">
+                <p class="pub-title" data-i18n="pub13_title">LLM 기반 프로그램 자동 정정에서 토큰 길이 문제 처리를 위한 패치 경량화와 복원 활용</p>
+                <p class="pub-authors">Eunseo Jung, Aslan Safarovich Abdinabiev, Byungjeong Lee</p>
+                <p class="pub-venue" data-i18n="pub13_venue">한국소프트웨어종합학술대회 (KSC 2024), pp. 381–383</p>
+                <div class="pub-chips">
+                  <span data-i18n="pub13_chip_1">공저자</span>
+                </div>
+                <a href="https://scholar.google.com/citations?user=W-YakaQAAAAJ&amp;view_op=view_citation&amp;citation_for_view=W-YakaQAAAAJ:JQOojiI6XY0C" target="_blank" class="pub-link">Google Scholar →</a>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <div class="pub-left">
+                <span class="pub-badge dc">DC</span>
+                <span class="pub-year">2024</span>
+              </div>
+              <div class="pub-right">
+                <p class="pub-title" data-i18n="pub14_title">자동 프로그램 정정을 위한 LLM 모델의 토큰 길이 제한 해결</p>
+                <p class="pub-authors">Eunseo Jung, Aslan Safarovich Abdinabiev, Byungjeong Lee</p>
+                <p class="pub-venue" data-i18n="pub14_venue">한국컴퓨터종합학술대회 (KCC 2024), pp. 360–362</p>
+                <div class="pub-chips">
+                  <span data-i18n="pub14_chip_1">공저자</span>
+                </div>
+                <a href="https://scholar.google.com/citations?user=W-YakaQAAAAJ&amp;view_op=view_citation&amp;citation_for_view=W-YakaQAAAAJ:8AbLer7MMksC" target="_blank" class="pub-link">Google Scholar →</a>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <div class="pub-left">
+                <span class="pub-badge dc">DC</span>
+                <span class="pub-year">2023</span>
+              </div>
+              <div class="pub-right">
+                <p class="pub-title" data-i18n="pub7_title">학습 기반 프로그램 수정을 위한 템플릿 접근법 적용</p>
+                <p class="pub-authors">Aslan Safarovich Abdinabiev, Eunseo Jung, Byungjeong Lee</p>
+                <p class="pub-venue" data-i18n="pub7_venue">한국소프트웨어종합학술대회 (KSC 2023)</p>
+                <div class="pub-chips"><span data-i18n="pub7_chip_1">제1저자</span></div>
+                <a href="https://scholar.google.com/citations?user=W-YakaQAAAAJ&amp;view_op=view_citation&amp;citation_for_view=W-YakaQAAAAJ:LkGwnXOMwfcC" target="_blank" class="pub-link">Google Scholar →</a>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <div class="pub-left">
+                <span class="pub-badge dj">DJ</span>
+                <span class="pub-year">2023</span>
+              </div>
+              <div class="pub-right">
+                <p class="pub-title" data-i18n="pub15_title">멀티 청크 버그 정정을 위한 버기 블록 대상 프로그램 정정 최적화 적용</p>
+                <p class="pub-authors">Jisung Kim, Aslan Safarovich Abdinabiev, Byungjeong Lee</p>
+                <p class="pub-venue" data-i18n="pub15_venue">정보과학회 컴퓨팅의 실제 논문지, Vol. 29, No. 8, pp. 371–377</p>
+                <div class="pub-chips">
+                  <span data-i18n="pub15_chip_1">공저자</span>
+                </div>
+                <a href="https://scholar.google.com/citations?user=W-YakaQAAAAJ&amp;view_op=view_citation&amp;citation_for_view=W-YakaQAAAAJ:_Qo2XoVZTnwC" target="_blank" class="pub-link">Google Scholar →</a>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <div class="pub-left">
+                <span class="pub-badge dc">DC</span>
+                <span class="pub-year">2023</span>
+              </div>
+              <div class="pub-right">
+                <p class="pub-title" data-i18n="pub6_title">자동 프로그램 수정에서 다중 청크 버그를 위한 패치 최적화 개선</p>
+                <p class="pub-authors">Aslan Safarovich Abdinabiev, Jisung Kim, Byungjeong Lee</p>
+                <p class="pub-venue" data-i18n="pub6_venue">한국컴퓨터종합학술대회 (KCC 2023)</p>
+                <div class="pub-chips"><span data-i18n="pub6_chip_1">제1저자</span></div>
+                <a href="https://scholar.google.com/citations?user=W-YakaQAAAAJ&amp;view_op=view_citation&amp;citation_for_view=W-YakaQAAAAJ:KlAtU1dfN6UC" target="_blank" class="pub-link">Google Scholar →</a>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <div class="pub-left">
+                <span class="pub-badge dc">DC</span>
+                <span class="pub-year">2022</span>
+              </div>
+              <div class="pub-right">
+                <p class="pub-title" data-i18n="pub16_title">멀티 청크 프로그램 정정을 위한 패치 최적화를 버기 블록에 적용</p>
+                <p class="pub-authors">Jisung Kim, Aslan Safarovich Abdinabiev, Byungjeong Lee</p>
+                <p class="pub-venue" data-i18n="pub16_venue">한국소프트웨어종합학술대회 (KSC 2022), pp. 274–276</p>
+                <div class="pub-chips">
+                  <span data-i18n="pub16_chip_1">공저자</span>
+                </div>
+                <a href="https://scholar.google.com/citations?user=W-YakaQAAAAJ&amp;view_op=view_citation&amp;citation_for_view=W-YakaQAAAAJ:e5wmG9Sq2KIC" target="_blank" class="pub-link">Google Scholar →</a>
+              </div>
+            </div>
+          </div>
+
+          <p class="pub-footer-links">
+            <a href="https://scholar.google.com/citations?hl=en&user=W-YakaQAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" data-i18n="pub_footer_scholar">Google Scholar →</a>
+            &nbsp;·&nbsp;
+            <a href="https://selab.uos.ac.kr/lab-achievements" target="_blank" data-i18n="pub_footer_lab">연구실 성과 →</a>
+          </p>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+          <h2 data-i18n="contact_heading">연락처</h2>
+          <div class="contact-grid">
+            <div class="contact-item"><span data-i18n="contact_email">이메일</span><a href="mailto:aslan@uos.ac.kr">aslan@uos.ac.kr</a></div>
+            <div class="contact-item"><span data-i18n="contact_phone">전화</span><a href="tel:+821095069707">+82 10-9506-9707</a></div>
+            <div class="contact-item"><span data-i18n="contact_portfolio">포트폴리오</span><a href="https://Aslan7197.github.io/portfolio" target="_blank">Aslan7197.github.io/portfolio</a></div>
+            <div class="contact-item"><span data-i18n="contact_telegram">텔레그램</span><a href="https://t.me/aslan_7197" target="_blank">aslan_7197</a></div>
+            <div class="contact-item"><span data-i18n="contact_scholar">Scholar</span><a href="https://scholar.google.com/citations?hl=en&user=W-YakaQAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Google Scholar</a></div>
+          </div>
+        </section>
+
+  </main>
+
+  <footer>
+    <p data-i18n="footer_copyright">&copy; 2026 Aslan Abdinabiev · 서울, 대한민국</p>
+    <p><a href="files/Aslan_CV(2026.10-revised).pdf" download data-i18n="footer_download">이력서 다운로드</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
