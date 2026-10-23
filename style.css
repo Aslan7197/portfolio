@@ -35,6 +35,31 @@ body {
 #navbar ul li a:hover,
 #navbar ul li a.active { color: #f8fafc; }
 
+.lang-switch {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.lang-btn {
+  border: 1px solid #475569;
+  background: transparent;
+  color: #94a3b8;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 0.78em;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.lang-btn:hover {
+  color: #f8fafc;
+  border-color: #94a3b8;
+}
+.lang-btn.active {
+  background: #94a3b8;
+  color: #1e293b;
+  border-color: #94a3b8;
+}
+
 /* ── Hero ── */
 #hero {
   background: #1e293b;
@@ -391,6 +416,7 @@ section h2 {
 .pub-right { flex: 1; }
 .pub-title { font-size: 0.9em; font-weight: bold; color: #1e293b; margin-bottom: 3px; line-height: 1.4; }
 .pub-title-kr { font-size: 0.8em; color: #64748b; margin-bottom: 3px; }
+.pub-authors { font-size: 0.8em; color: #64748b; margin-bottom: 3px; line-height: 1.5; }
 .pub-venue { font-size: 0.8em; color: #64748b; margin-bottom: 6px; font-style: italic; }
 .pub-chips { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 6px; }
 .pub-chips span {

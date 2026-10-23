@@ -1,0 +1,145 @@
+% Bilingual CV, October 2026. One page per language.
+\documentclass[letterpaper,11pt]{article}
+\usepackage[letterpaper,left=0.5in,right=0.5in,top=0.38in,bottom=0.4in]{geometry}
+\usepackage{fontspec}
+\usepackage{kotex}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+\setmainfont{Latin Modern Roman}
+\setsansfont{Latin Modern Sans}
+\setmainhangulfont[AutoFakeBold=1.5]{Noto Sans KR}
+\setsanshangulfont[AutoFakeBold=1.5]{Noto Sans KR}
+\pagestyle{empty}
+\urlstyle{same}
+\raggedright
+\raggedbottom
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1pt}
+\setlist[itemize]{leftmargin=1.3em,topsep=1pt,itemsep=1pt,parsep=0pt,partopsep=0pt}
+
+% Positive spacing keeps the rule clear of the text that follows it.
+\titleformat{\section}{\large\bfseries\raggedright}{}{0pt}{}[\vspace{2pt}\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{6pt}
+
+\newcommand{\cvHeader}[3]{%
+  {\centering
+    {\footnotesize\textit{#1}\par}
+    \vspace{1pt}
+    {\Large\textbf{#2}\par}
+    \vspace{1pt}
+    (010) 9506-9707 $|$ \href{mailto:aslan@uos.ac.kr}{\underline{aslan@uos.ac.kr}} $|$ #3 $|$
+    \href{https://Aslan7197.github.io/portfolio}{\underline{Aslan7197.github.io/portfolio}}\par
+  }
+  \vspace{3pt}
+}
+\newcommand{\educationEntry}[3]{\textbf{#1} -- #2\hfill #3\par}
+\newcommand{\projectHeading}[2]{\textbf{#1}\hfill\href{#2}{\underline{GitHub}}\par}
+
+\begin{document}
+\small
+\cvHeader{한국어 버전 / Korean Version}{아슬란}{서울, 대한민국}
+
+\section{요약}
+LLM 기반 소프트웨어 디버깅 및 자동 프로그램 수정을 연구하는 소프트웨어공학 박사과정 학생. 멀티 에이전트 시스템, 검색 증강 생성(RAG), 정적 분석을 활용한 도구 개발 경험 보유. 연구 인턴 또는 파트타임 엔지니어링 직무 지원 가능하며, 졸업 후 풀타임 전환 희망 (2027년 졸업 예정).
+
+\section{학력}
+\educationEntry{서울시립대학교}{소프트웨어공학 박사과정}{2024 -- 현재}
+\educationEntry{서울시립대학교}{소프트웨어공학 석사}{2022 -- 2024}
+\educationEntry{우즈베키스탄 국립대학교}{정보기술 학사}{2016 -- 2020}
+
+\section{연구 경력}
+\textbf{대학원 학생연구원}\hfill 2022 -- 현재\par
+\textit{서울시립대학교 소프트웨어공학 연구실}
+\begin{itemize}
+  \item LLM 기반 자동 프로그램 수정 도구를 개발하고 평가하여 Defects4J 및 SWE-bench Lite에서 \textbf{Java 버그 365개, Python 버그 87개를 정확히 수정}.
+  \item 실제 GitHub 이슈 300개에서 \textbf{파일 식별 정확도 74.6\%, 코드 요소 식별 정확도 52.3\%}를 달성하여 기존 LLM 기반 결함 위치 추정 도구 대비 우수한 성능 확보.
+  \item 수정 워크플로, 모델, 계산 예산을 선택하는 예측 기반 라우팅 개발. 로컬 오픈웨이트 LLM을 활용하여 \textbf{15개 저장소의 버그 733개, 구성 27종을 평가}.
+\end{itemize}
+
+\section{프로젝트}
+\projectHeading{동적 컨텍스트를 활용한 에이전트 기반 프로그램 수정}{https://github.com/soft7197/dcsa4apr}
+\begin{itemize}
+  \item 코드 문맥 검색, 패치 생성, 과적합 탐지를 담당하는 세 LLM 에이전트를 연계한 수정 시스템 구현.
+\end{itemize}
+\projectHeading{MCRepair++: 여러 코드 조각에 걸친 버그 수정}{https://github.com/kimjisung78/MCRepair-Plus-Plus}
+\begin{itemize}
+  \item CodeBERT 파인튜닝 및 패치 선택 최적화로 \textbf{버그 79개를 정확히 수정}. 이 중 \textbf{31개는 여러 코드 조각의 수정이 필요한 버그}이며, 기존 자동 수정 도구 3종 대비 우수한 성능 확보.
+\end{itemize}
+\projectHeading{분류 기반 결함 위치 추정}{https://github.com/soft7197/cbfl}
+\begin{itemize}
+  \item 이슈 설명의 위치 단서에 따라 직접 조회, 구조 기반 코드 검색, 반복적 에이전트 검색을 선택.
+\end{itemize}
+
+\section{논문 실적}
+\textbf{제1저자:} IEEE Access, Journal of Information Processing Systems, 정보과학회 컴퓨팅의 실제 논문지, 정보처리학회 논문지, KCSE·KCC·KSC 학술대회 논문집.\par
+\textbf{공저자:} IEEE Access, 정보과학회논문지, 정보과학회 컴퓨팅의 실제 논문지, KCC·KSC 학술대회 논문집.\par
+\href{https://scholar.google.com/citations?user=W-YakaQAAAAJ}{\underline{전체 논문 목록: Google Scholar}}
+
+\section{기술 스택}
+\textbf{LLM:} GPT-4o, CodeLlama-34B, Qwen 2.5 32B; Gemma 4 12B, Devstral Small 2 24B, Qwen3.8-27B.\par
+\textbf{코드·임베딩 모델:} CodeBERT, Qwen3-Embedding-0.6B; 파인튜닝, RAG, 의미 기반 검색.\par
+\textbf{프로그래밍 언어:} Python, Java, SQL, Bash, C\#.\par
+\textbf{프레임워크:} PyTorch, TensorFlow, Transformers, Scikit-learn, FAISS, LangChain, FastAPI, vLLM.\par
+\textbf{도구:} Git, Docker, Linux, OpenAI API, JavaParser, Defects4J, SWE-bench.\par
+\textbf{언어 능력:} 영어 (B2--C1), 한국어 (A2), 러시아어 (B1), 우즈베크어 (모국어).
+
+\section{수상}
+\textbf{최우수논문상}, KCC 2026, 소프트웨어공학 (2026년 6월).\par
+\textbf{우수단편논문상}, KCSE 2025 (2025년 1월).\par
+\textbf{우수발표논문상 2회}, KCC 2023 (2023년 7월), KSC 2022 (2023년 2월 수상).
+
+\newpage
+\cvHeader{English Version}{Aslan Abdinabiev}{Seoul, Korea}
+
+\section{Summary}
+PhD student in Software Engineering with experience in building LLM-based tools for software debugging and repair, including multi-agent systems, retrieval-augmented generation (RAG), and static analysis. Seeking research internships or part-time engineering roles, with full-time availability after graduation (expected 2027).
+
+\section{Education}
+\educationEntry{University of Seoul}{PhD in Software Engineering (in progress)}{2024 -- Present}
+\educationEntry{University of Seoul}{M.Sc. in Software Engineering}{2022 -- 2024}
+\educationEntry{National University of Uzbekistan}{B.Sc. in Information Technology}{2016 -- 2020}
+
+\section{Research Experience}
+\textbf{Graduate Student Researcher}\hfill 2022 -- Present\par
+\textit{Software Engineering Laboratory, University of Seoul}
+\begin{itemize}
+  \item Developed and evaluated LLM-based repair tools that correctly fixed \textbf{365 Java bugs and 87 Python bugs} on the Defects4J and SWE-bench Lite benchmarks.
+  \item Achieved \textbf{74.6\% correct-file identification} and \textbf{52.3\% code-element accuracy} on 300 real GitHub issues, outperforming existing LLM-based bug-localization tools.
+  \item Developed predictive routing to select a repair workflow, model, and compute budget; evaluated \textbf{27 configurations on 733 bugs} across 15 repositories using locally served open-weight LLMs.
+\end{itemize}
+
+\section{Projects}
+\projectHeading{Agent-Based Program Repair with Dynamic Context}{https://github.com/soft7197/dcsa4apr}
+\begin{itemize}
+  \item Coordinated three LLM agents for code-context retrieval, patch generation, and overfitting detection.
+\end{itemize}
+\projectHeading{MCRepair++: Repairing Bugs Across Multiple Code Fragments}{https://github.com/kimjisung78/MCRepair-Plus-Plus}
+\begin{itemize}
+  \item Fine-tuned CodeBERT and optimized patch selection to fix \textbf{79 bugs}, including \textbf{31 requiring changes in multiple code fragments}; repaired more bugs than three existing automated repair tools.
+\end{itemize}
+\projectHeading{Classification-Based Bug Localization}{https://github.com/soft7197/cbfl}
+\begin{itemize}
+  \item Used issue-description clues to choose direct lookup, structured code search, or iterative agent search.
+\end{itemize}
+
+\section{Publications}
+\textbf{First author:} IEEE Access; Journal of Information Processing Systems; KIISE Transactions on Computing Practices; Transactions of the Korea Information Processing Society; KCSE, KCC, and KSC proceedings.\par
+\textbf{Co-author:} IEEE Access; Journal of KIISE; KIISE Transactions on Computing Practices; KCC and KSC proceedings.\par
+\href{https://scholar.google.com/citations?user=W-YakaQAAAAJ}{\underline{Full publication list: Google Scholar}}
+
+\section{Technical Skills}
+\textbf{LLMs:} GPT-4o, CodeLlama-34B, Qwen 2.5 32B; Gemma 4 12B, Devstral Small 2 24B, Qwen3.8-27B.\par
+\textbf{Code/embedding models:} CodeBERT, Qwen3-Embedding-0.6B; fine-tuning, RAG, semantic retrieval.\par
+\textbf{Languages:} Python, Java, SQL, Bash, C\#.\par
+\textbf{Frameworks:} PyTorch, TensorFlow, Transformers, Scikit-learn, FAISS, LangChain, FastAPI, vLLM.\par
+\textbf{Tools:} Git, Docker, Linux, OpenAI API, JavaParser, Defects4J, SWE-bench.\par
+\textbf{Spoken languages:} English (B2--C1), Korean (A2), Russian (B1), Uzbek (Native).
+
+\section{Awards}
+\textbf{Best Paper Award}, KCC 2026, Software Engineering (June 2026).\par
+\textbf{Best Short Paper Award}, KCSE 2025 (January 2025).\par
+\textbf{Best Presentation Paper Awards}, KCC 2023 (July 2023); KSC 2022 (awarded February 2023).
+
+\end{document}
